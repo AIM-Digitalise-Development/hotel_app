@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useAuth } from "../../context/authContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
-// import { Link } from 'react-router-dom';
 
 const AdminNavbar = () => {
   const { user } = useAuth();
@@ -14,16 +13,10 @@ const AdminNavbar = () => {
 
   return (
     <div className="admin-navbar bg-light-blue p-4 flex justify-between items-center shadow-md">
-      {/* Welcome Text */}
-      {/* <div>
-      <Link to="/admin-dashboard" className="text-white font-bold text-lg">
-          Welcome {user.name}
-        </Link>
-      </div> */}
-
       {/* Centered Navigation Buttons */}
       <div className="flex gap-1 items-center justify-center flex-grow">
-        {/* Employee Master */}
+
+        {/* Home Icon */}
         <div className="relative">
           <FontAwesomeIcon
             icon={faHouse}
@@ -32,6 +25,8 @@ const AdminNavbar = () => {
             title="Go to Dashboard"
           />
         </div>
+
+        {/* Employee Master */}
         <div className="relative">
           <button
             className="nav-button rounded-full px-4 py-1 bg-gray-600 text-white hover:bg-gray-500 focus:outline-none"
@@ -40,41 +35,20 @@ const AdminNavbar = () => {
             Employee Master
           </button>
           {activeDropdown === "employeeMaster" && (
-            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg">
-              <a
-                href="/admin-dashboard/departments"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg z-50">
+              <a href="/admin-dashboard/departments" className="block px-4 py-2 hover:bg-gray-200">
                 Department
               </a>
-              <a
-                href="/admin-dashboard/designations"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/designations" className="block px-4 py-2 hover:bg-gray-200">
                 Designation
               </a>
-              <a
-                href="/admin-dashboard/employees"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/employees" className="block px-4 py-2 hover:bg-gray-200">
                 Employee
               </a>
-              <a
-                href="/admin-dashboard/leaves"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/leaves" className="block px-4 py-2 hover:bg-gray-200">
                 Leave
               </a>
-              {/* <a
-                href="/admin-dashboard/attendance"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
-                Attendance
-              </a> */}
-              <a
-                href="/admin-dashboard/salary/add"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/salary/add" className="block px-4 py-2 hover:bg-gray-200">
                 Salary
               </a>
             </div>
@@ -90,55 +64,28 @@ const AdminNavbar = () => {
             Room Master
           </button>
           {activeDropdown === "roomMaster" && (
-            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg">
-              <a
-                href="/admin-dashboard/room-category"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg z-50">
+              <a href="/admin-dashboard/room-category" className="block px-4 py-2 hover:bg-gray-200">
                 Room Category
               </a>
-              <a
-                href="/admin-dashboard/room-entries"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/room-entries" className="block px-4 py-2 hover:bg-gray-200">
                 Room Entry
               </a>
-              <a
-                href="/admin-dashboard/food-list"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/food-list" className="block px-4 py-2 hover:bg-gray-200">
                 Food Entry
               </a>
-              <a
-                href="/admin-dashboard/laundry-service"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/laundry-service" className="block px-4 py-2 hover:bg-gray-200">
                 Laundry Service
               </a>
-              <a
-                href="/admin-dashboard/item-entry"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/item-entry" className="block px-4 py-2 hover:bg-gray-200">
                 Item Entry
               </a>
-              <a
-                href="/admin-dashboard/car-entries"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/car-entries" className="block px-4 py-2 hover:bg-gray-200">
                 Car Entry
               </a>
-              <a
-                href="/admin-dashboard/housekeeping"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/housekeeping" className="block px-4 py-2 hover:bg-gray-200">
                 Housekeeping
               </a>
-              {/* <a
-                href="/admin-dashboard/other-entry"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
-                Other Entry
-              </a> */}
             </div>
           )}
         </div>
@@ -152,17 +99,13 @@ const AdminNavbar = () => {
             Room Booking
           </button>
           {activeDropdown === "bookingRoom" && (
-            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg">
-              <a
-                href="/admin-dashboard/room-bookings"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg z-50">
+              <a href="/admin-dashboard/room-bookings" className="block px-4 py-2 hover:bg-gray-200">
                 Rooms
               </a>
               <a href="/admin-dashboard/homepage" className="block px-4 py-2 hover:bg-gray-200">Date Search</a>
               <a href="/admin-dashboard/booking" className="block px-4 py-2 hover:bg-gray-200">Room Display</a>
               <a href="/admin-dashboard/bookings-list" className="block px-4 py-2 hover:bg-gray-200">Bookings</a>
-              {/* <a href="/admin-dashboard/customers" className="block px-4 py-2 hover:bg-gray-200">Enquiry Form</a> */}
             </div>
           )}
         </div>
@@ -176,24 +119,18 @@ const AdminNavbar = () => {
             Reports
           </button>
           {activeDropdown === "reports" && (
-            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg">
-              <a
-                href="/admin-dashboard/booking-reports"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+            <div className="absolute left-0 mt-2 w-48 bg-white text-gray-700 rounded shadow-lg z-50">
+              <a href="/admin-dashboard/booking-reports" className="block px-4 py-2 hover:bg-gray-200">
                 Booking Reports
               </a>
-              <a
-                href="/admin-dashboard/revenue-reports"
-                className="block px-4 py-2 hover:bg-gray-200"
-              >
+              <a href="/admin-dashboard/revenue-reports" className="block px-4 py-2 hover:bg-gray-200">
                 Revenue Reports
               </a>
             </div>
           )}
         </div>
 
-        {/* Settings */}
+        {/* Access Management */}
         <div className="relative">
           <button
             className="nav-button rounded-full px-6 py-1 bg-gray-600 text-white hover:bg-gray-500 focus:outline-none"
@@ -203,13 +140,6 @@ const AdminNavbar = () => {
           </button>
         </div>
       </div>
-
-      {/* Logout Button */}
-      {/* <div>
-        <button className="bg-red-500 text-white px-4 py-2 rounded-full shadow-md transform hover:scale-105 transition-all" onClick={logout}>
-          Logout
-        </button>
-      </div> */}
     </div>
   );
 };
