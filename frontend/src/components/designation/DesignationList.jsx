@@ -15,7 +15,7 @@ const DesignationList = () => {
 
   const fetchDesignations = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/designations`, {
+      const response = await axios.get(`https://hotel-app-kx38.onrender.com/api/designations`, {
         params: {
           page: currentPage,
           limit: itemsPerPage,
@@ -53,7 +53,7 @@ const DesignationList = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this designation?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/designations/${id}`, {
+        await axios.delete(`https://hotel-app-kx38.onrender.com/api/designations/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

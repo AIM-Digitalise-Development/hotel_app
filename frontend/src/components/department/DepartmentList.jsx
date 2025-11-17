@@ -25,7 +25,7 @@ const DepartmentList = () => {
     console.log("hello")
     setDepLoading(true);
        try{
-         const response = await axios.get('http://localhost:5000/api/department',{
+         const response = await axios.get('https://hotel-app-kx38.onrender.com/api/department',{
            headers: {
              Authorization : `Bearer ${localStorage.getItem('token')}`,
            },

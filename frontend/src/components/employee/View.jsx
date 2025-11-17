@@ -11,7 +11,7 @@ const View = () => {
     const fetchEmployee = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/employee/${id}`,
+          `https://hotel-app-kx38.onrender.com/api/employee/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -41,7 +41,7 @@ const View = () => {
           <div className="details-grid">
             <div className="profile-section">
               <img
-                src={`http://localhost:5000/${employee.userId.profileImage}`}
+                src={`https://hotel-app-kx38.onrender.com/${employee.userId.profileImage}`}
                 className="profile-image"
                 alt="profile"
               />

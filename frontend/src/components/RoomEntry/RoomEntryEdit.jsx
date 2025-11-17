@@ -24,7 +24,7 @@ const RoomEntryEdit = () => {
   useEffect(() => {
     const fetchRoomCategories = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/room-categories");
+        const res = await axios.get("https://hotel-app-kx38.onrender.com/api/room-categories");
         setCategories(res.data);
       } catch (error) {
         console.error("Error fetching categories:", error);
@@ -38,7 +38,7 @@ const RoomEntryEdit = () => {
   useEffect(() => {
     const fetchRoomDetails = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/rooms/${roomId}`);
+        const res = await axios.get(`https://hotel-app-kx38.onrender.com/api/rooms/${roomId}`);
         const room = res.data;
         setRoomNumber(room.roomNumber);
         setFloorNumber(room.floorNumber);
@@ -78,7 +78,7 @@ const RoomEntryEdit = () => {
     });
 
     try {
-      await axios.put(`http://localhost:5000/api/rooms/edit/${roomId}`, formData, {
+      await axios.put(`https://hotel-app-kx38.onrender.com/api/rooms/edit/${roomId}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

@@ -16,7 +16,7 @@ const EditDesignation = () => {
   useEffect(() => {
     const fetchDesignationDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/designation/${id}`, {
+        const response = await axios.get(`https://hotel-app-kx38.onrender.com/api/designation/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -31,7 +31,7 @@ const EditDesignation = () => {
 
     const fetchDepartments = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/departments", {
+        const response = await axios.get("https://hotel-app-kx38.onrender.com/api/departments", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -58,7 +58,7 @@ const EditDesignation = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:5000/api/designation/${id}`, designation, {
+      const response = await axios.put(`https://hotel-app-kx38.onrender.com/api/designation/${id}`, designation, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

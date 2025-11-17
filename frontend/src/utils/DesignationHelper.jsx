@@ -10,7 +10,7 @@ const ListDesignation = () => {
     try {
       console.log("helllll");
       
-      const response = await axios.get("http://localhost:5000/api/designation", {
+      const response = await axios.get("https://hotel-app-kx38.onrender.com/api/designation", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

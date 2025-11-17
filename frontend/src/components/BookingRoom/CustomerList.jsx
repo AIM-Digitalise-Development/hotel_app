@@ -11,7 +11,7 @@ const CustomerList = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/customers"); 
+        const response = await axios.get("https://hotel-app-kx38.onrender.com/api/customers"); 
         console.log("API Response:", response.data); 
         setCustomers(response.data);
       } catch (error) {
@@ -26,7 +26,7 @@ const CustomerList = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this customer?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/customers/${id}`);
+        await axios.delete(`https://hotel-app-kx38.onrender.com/api/customers/${id}`);
         alert("Customer deleted successfully.");
         setCustomers(customers.filter((customer) => customer._id !== id)); // Update list without the deleted customer
       } catch (error) {
@@ -82,7 +82,7 @@ const CustomerList = () => {
                 <td className="border px-6 py-2">{customer.govt_id_number}</td>
                 <td className="border px-6 py-2">
                   <a
-                    href={`http://localhost:5000/${customer.govt_id_file}`} 
+                    href={`https://hotel-app-kx38.onrender.com/${customer.govt_id_file}`} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 underline"

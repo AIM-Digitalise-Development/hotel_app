@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api'; // Adjust this if needed
+const BASE_URL = 'https://hotel-app-kx38.onrender.com/api'; // Adjust this if needed
 
 // Fetch all employees
 export const fetchEmployees = async (query = "") => {

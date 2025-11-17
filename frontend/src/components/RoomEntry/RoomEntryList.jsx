@@ -17,7 +17,7 @@ const RoomEntryList = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/rooms");
+        const res = await axios.get("https://hotel-app-kx38.onrender.com/api/rooms");
         console.log("Fetched rooms:", res.data);
         setRooms(res.data);
       } catch (error) {
@@ -79,7 +79,7 @@ const RoomEntryList = () => {
   const handleDelete = async (roomId) => {
     if (window.confirm("Are you sure you want to delete this room?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/rooms/${roomId}`);
+        await axios.delete(`https://hotel-app-kx38.onrender.com/api/rooms/${roomId}`);
         setRooms((prevRooms) => prevRooms.filter((room) => room._id !== roomId));
         alert("Room deleted successfully.");
       } catch (error) {

@@ -11,7 +11,7 @@ export const handleImageUpload = (setImages) => async (e) => {
       formData.append('file', file);
 
       try {
-        const res = await axios.post('http://localhost:5000/api/upload-image', formData, {
+        const res = await axios.post('https://hotel-app-kx38.onrender.com/api/upload-image', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },

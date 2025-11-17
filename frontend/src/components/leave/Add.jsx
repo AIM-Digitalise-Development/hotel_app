@@ -43,7 +43,7 @@ const Add = () => {
       }
 
       const response = await axios.post(
-        `http://localhost:5000/api/leave/add`,
+        `https://hotel-app-kx38.onrender.com/api/leave/add`,
         formData,
         {
           headers: {

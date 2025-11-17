@@ -10,7 +10,7 @@ const ListCarEntries = () => {
   useEffect(() => {
     const fetchCarEntries = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/car-entries');
+        const response = await axios.get('https://hotel-app-kx38.onrender.com/api/car-entries');
         setCarEntries(response.data.data);
       } catch (error) {
         console.error(error);

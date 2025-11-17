@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/laundry-service";
+const API_URL = "https://hotel-app-kx38.onrender.com/api/laundry-service";
 
 export const addLaundryServiceEntry = async (data) => {
   try {

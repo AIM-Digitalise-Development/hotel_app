@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://hotel-app-kx38.onrender.com/api";
 
 // Fetch all housekeeping service entries
 export const getHousekeepingServiceEntries = async () => {

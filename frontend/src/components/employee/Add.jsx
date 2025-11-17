@@ -20,7 +20,7 @@ const Add = () => {
     const fetchDesignations = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/designations",
+          "https://hotel-app-kx38.onrender.com/api/designations",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -66,7 +66,7 @@ const Add = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/employee/add",
+        "https://hotel-app-kx38.onrender.com/api/employee/add",
         formDataObj,
         {
           headers: {

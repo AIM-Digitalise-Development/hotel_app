@@ -20,7 +20,7 @@ const RoomBookingForm = () => {
     if (!roomDetails && roomId) {
       console.log("Fetching room details from backend...");
       axios
-        .get(`http://localhost:5000/api/rooms/${roomId}`)
+        .get(`https://hotel-app-kx38.onrender.com/api/rooms/${roomId}`)
         .then((response) => {
           setSelectedRoom(response.data);
           console.log("Fetched room details:", response.data.room);
@@ -109,7 +109,7 @@ const RoomBookingForm = () => {
     });
 
     axios
-      .post("http://localhost:5000/api/book-room", formData, {
+      .post("https://hotel-app-kx38.onrender.com/api/book-room", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

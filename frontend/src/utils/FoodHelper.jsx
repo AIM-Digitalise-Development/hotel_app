@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 // Base API instance
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Full backend URL
+  baseURL: 'https://hotel-app-kx38.onrender.com/api', // Full backend URL
   headers: {
     'Content-Type': 'application/json',
   },

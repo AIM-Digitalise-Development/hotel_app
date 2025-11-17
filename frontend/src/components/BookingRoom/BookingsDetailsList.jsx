@@ -15,7 +15,7 @@ function BookingsDetailList() {
     const fetchBookings = async () => {
       try {
         console.log("Fetching bookings...");
-        const response = await fetch("http://localhost:5000/api/bookings");
+        const response = await fetch("https://hotel-app-kx38.onrender.com/api/bookings");
         const data = await response.json();
         console.log("Fetched bookings:", data);
         setBookings(data);

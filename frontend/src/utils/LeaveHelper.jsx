@@ -61,7 +61,7 @@ export const columns = [
     cell: (row) => (
       row.supportingDocument ? (
         <a
-          href={`http://localhost:5000/${row.supportingDocument}`}  // Adjust the URL as per your backend setup
+          href={`https://hotel-app-kx38.onrender.com/${row.supportingDocument}`}  // Adjust the URL as per your backend setup
           target="_blank"
           rel="noopener noreferrer"
         >

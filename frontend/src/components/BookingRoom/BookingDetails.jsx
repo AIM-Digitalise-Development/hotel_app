@@ -37,7 +37,7 @@ function BookingDetails() {
       
       console.log('Booking details:', bookingDetails); 
 
-      const response = await fetch("http://localhost:5000/api/bookings/create", {
+      const response = await fetch("https://hotel-app-kx38.onrender.com/api/bookings/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

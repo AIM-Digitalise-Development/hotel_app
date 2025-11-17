@@ -13,7 +13,7 @@ function RoomDisplay() {
   // Fetch the booking data for overlapping check-in/check-out dates
   const fetchBookingData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/bookings");
+      const response = await axios.get("https://hotel-app-kx38.onrender.com/api/bookings");
       const bookings = response.data;
       const updatedRoomStatus = {};
   
@@ -68,7 +68,7 @@ function RoomDisplay() {
 
     try {
       console.log("Fetching rooms with check-in date:", from, "and check-out date:", to);
-      const response = await axios.get("http://localhost:5000/api/rooms", {
+      const response = await axios.get("https://hotel-app-kx38.onrender.com/api/rooms", {
         params: { checkInDate: from, checkOutDate: to },
       });
       console.log("Fetched rooms:", response.data);

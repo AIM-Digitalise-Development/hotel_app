@@ -21,7 +21,7 @@ const AddCarEntry = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/car-entry', formData);
+      await axios.post('https://hotel-app-kx38.onrender.com/api/car-entry', formData);
       alert('Car Entry Added Successfully!');
       navigate('/admin-dashboard/car-entries');
     } catch (error) {

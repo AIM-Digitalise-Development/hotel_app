@@ -25,7 +25,7 @@ const Setting = () => {
             setError('Password does not match');
         }else{
             try{
-                const response = await axios.put('http://localhost:5000/api/setting/change-password',setting,
+                const response = await axios.put('https://hotel-app-kx38.onrender.com/api/setting/change-password',setting,
                 { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` 
             } 
         }

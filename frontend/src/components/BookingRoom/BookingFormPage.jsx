@@ -22,7 +22,7 @@ function BookingFormPage() {
     const fetchBookingDetails = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/bookings/${id}`
+          `https://hotel-app-kx38.onrender.com/api/bookings/${id}`
         );
         const data = await response.json();
         setBookingDetails(data);
@@ -74,7 +74,7 @@ function BookingFormPage() {
     try {
       console.log("Saving guests:", guests); 
       console.log("Booking ID:", id);
-      const response = await fetch(`http://localhost:5000/api/add-guest`, {
+      const response = await fetch(`https://hotel-app-kx38.onrender.com/api/add-guest`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

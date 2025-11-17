@@ -15,7 +15,7 @@ const AddDesignation = () => {
     console.log("hello111");
 
     try {
-      const response = await axios.get("http://localhost:5000/api/department", {
+      const response = await axios.get("https://hotel-app-kx38.onrender.com/api/department", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -46,7 +46,7 @@ const AddDesignation = () => {
     try {
       console.log("helloooo",designation);
       const response = await axios.post(
-        "http://localhost:5000/api/designations/add",
+        "https://hotel-app-kx38.onrender.com/api/designations/add",
      
         
         designation,

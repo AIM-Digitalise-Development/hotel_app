@@ -23,7 +23,7 @@ const RoomEntryAdd = () => {
   useEffect(() => {
     const fetchRoomCategories = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/room-categories');
+        const res = await axios.get('https://hotel-app-kx38.onrender.com/api/room-categories');
         console.log('Fetched categories:', res.data); 
         console.log('API Response:', res); // Log the full response
         
@@ -74,7 +74,7 @@ const RoomEntryAdd = () => {
 
     try {
     
-      await axios.post('http://localhost:5000/api/rooms/add', formData, {
+      await axios.post('https://hotel-app-kx38.onrender.com/api/rooms/add', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
