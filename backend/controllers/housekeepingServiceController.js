@@ -1,4 +1,4 @@
-// controllers/housekeepingServiceController.js
+// controllers/housekeeepingServiceController.js
 import HousekeepingService from "../models/housekeepingServiceModel.js";
 
 // Create a new housekeeping service
