@@ -1,0 +1,50 @@
+/* Container Styles */
+.admin-summary {
+    padding: 1.5rem; /* Tailwind p-6 */
+}
+
+/* Header Styles */
+.admin-summary h3,
+.admin-summary h4 {
+    margin: 0;
+    font-size: 1.5rem; /* Tailwind text-2xl */
+    font-weight: bold; /* Tailwind font-bold */
+    text-align: center;
+}
+
+/* Dashboard Overview Header */
+.admin-summary h3 {
+    text-align: left; /* Align header to the left */
+}
+
+/* Grid Styles */
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Tailwind grid-cols-1 */
+    gap: 1rem; /* Tailwind gap-4 */
+    margin-top: 1.5rem; /* Tailwind mt-6 */
+}
+
+@media (min-width: 768px) {
+    .summary-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tailwind md:grid-cols-3 */
+    }
+}
+
+/* Leave Details Grid */
+.leave-details {
+    margin-top: 3rem; /* Tailwind mt-12 */
+}
+
+.leave-details-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Tailwind grid-cols-1 */
+    gap: 1.5rem; /* Tailwind gap-6 */
+    margin-top: 1.5rem; /* Tailwind mt-6 */
+}
+
+@media (min-width: 768px) {
+    .leave-details-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tailwind md:grid-cols-2 */
+    }
+}

@@ -1,0 +1,63 @@
+/* View.css */
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .profile-section {
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .info-section {
+    flex: 2 1 300px;
+  }
+  
+  .info-item {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+    width: 150px;
+  }
+  
+  .value {
+    font-weight: normal;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 40px;
+  }
+  

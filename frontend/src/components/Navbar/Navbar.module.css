@@ -1,0 +1,33 @@
+/* Global Styles */
+body {
+    background-color: #c9d9ef;
+   
+  }
+.mainNavbar {
+    
+    padding: 20px 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 8px;
+    margin: 0;
+    position: relative;
+    margin-top: 20px;
+    
+  }
+  
+  .mainNavbar button {
+    background-color: #9b9b9b; 
+    color: white;
+    border: none;
+    padding: 6px 32px;
+    margin: 0 1px; 
+    cursor: pointer;
+    border-radius: 18px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .mainNavbar button:hover {
+    background-color: #89CFF0; 
+    color: white;
+  }

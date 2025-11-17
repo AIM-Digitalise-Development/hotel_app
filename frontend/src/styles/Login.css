@@ -1,0 +1,92 @@
+/* Main container styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(to bottom, #38b2ac 50%, #f7fafc 50%);
+    gap: 1.5rem;
+  }
+  
+  /* Title styling */
+  .login-title {
+    font-family: 'Sevillana', cursive;
+    font-size: 1.875rem; /* 3xl */
+    color: white;
+  }
+  
+  /* Card styling */
+  .login-card {
+    border: 1px solid #e2e8f0; /* Light gray */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem; /* 6 */
+    width: 20rem; /* 80 */
+    height:250px;
+    background-color: white;
+  }
+  
+  /* Form heading styling */
+  .login-heading {
+    font-size: 1.5rem; /* 2xl */
+    font-weight: bold;
+    margin-bottom: 1rem; /* 4 */
+  }
+  
+  /* Input label styling */
+  .login-label {
+    display: block;
+    color: #4a5568; /* Gray-700 */
+    margin-bottom: 0.25rem; /* 1 */
+  }
+  
+  /* Input field styling */
+  .login-input {
+    width: 90%;
+    padding: 0.5rem 0.75rem; /* px-3 py-2 */
+    border: 1px solid #cbd5e0; /* Light gray */
+    border-radius: 0.25rem; /* Rounded */
+    outline: none;
+  }
+  
+  .login-input:focus {
+    border-color: #38b2ac; /* Teal-600 */
+    box-shadow: 0 0 0 2px rgba(56, 178, 172, 0.25);
+  }
+  
+  /* Checkbox and link styling */
+  .login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem; /* 4 */
+  }
+  
+  .login-checkbox {
+    accent-color: #38b2ac; /* Teal-600 */
+  }
+  
+  .login-link {
+    color: #38b2ac; /* Teal-600 */
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styling */
+  .login-button {
+    width: 100%;
+    background-color: #38b2ac; /* Teal-600 */
+    color: white;
+    padding: 0.5rem 0; /* py-2 */
+    border: none;
+    border-radius: 0.25rem; /* Rounded */
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #319795; /* Teal-500 */
+  }
+  

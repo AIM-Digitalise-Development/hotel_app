@@ -1,0 +1,12 @@
+.admin-dashboard {
+    display: flex;
+  }
+  
+  .admin-main {
+    flex: 1;
+    margin-left: 16rem; /* Tailwind's ml-64 (64 * 0.25rem = 16rem) */
+    background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+    height: 100vh; /* Tailwind's h-screen */
+    overflow: auto; /* Ensure proper scrolling behavior */
+  }
+  

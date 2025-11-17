@@ -1,0 +1,83 @@
+/* Room Entry List Page */
+.room-entry-list {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .room-entry-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .room-entry-list th,
+  .room-entry-list td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .room-entry-list .btn {
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .room-entry-list .btn.edit-btn {
+    background-color: #FFC107;
+  }
+  
+  .room-entry-list .btn.delete-btn {
+    background-color: #F44336;
+  }
+  
+  .room-entry-list .add-room-btn {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #008CBA;
+  }
+  
+  /* Add Room Entry Page */
+  .add-room-entry {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .add-room-entry input,
+  .add-room-entry select,
+  .add-room-entry button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .add-room-entry button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-room-entry button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-room-entry input[type="file"] {
+    padding: 5px;
+  }
+  
+  /* Overall Styles */
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }

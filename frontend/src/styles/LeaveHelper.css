@@ -1,0 +1,13 @@
+.leave-button {
+    padding: 0.25rem 1rem; /* Tailwind: px-4 py-1 */
+    background-color: #38b2ac; /* Tailwind: bg-teal-500 */
+    border-radius: 0.25rem; /* Tailwind: rounded */
+    color: white; /* Tailwind: text-white */
+    transition: background-color 0.3s ease; /* For hover effect */
+    cursor: pointer;
+  }
+  
+  .leave-button:hover {
+    background-color: #319795; /* Tailwind: hover:bg-teal-600 */
+  }
+  

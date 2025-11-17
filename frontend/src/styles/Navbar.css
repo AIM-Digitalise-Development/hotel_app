@@ -1,0 +1,77 @@
+/* Navbar Container Styling */
+.navbar {
+    background-color: #1D4ED8; /* Deep blue background */
+    padding: 0rem 2rem; /* Horizontal padding for spacing */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Navbar Max Width and Alignment */
+  .navbar-container {
+    max-width: 1280px; /* Maximum width for the navbar container */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Navbar Title Styling */
+  .navbar-title {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+  }
+  
+  /* Navbar Links List Styling */
+  .navbar-links {
+    display: flex;
+    gap: 2rem; /* Adds space between the links */
+    list-style-type: none; 
+  }
+  
+  /* Navbar Link Styling */
+  .navbar-link {
+    font-size: 1rem;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  /* Navbar Link Hover Effect */
+  .navbar-link:hover {
+    background-color: #2563eb; /* Lighter blue on hover */
+    color: white; /* Keep text white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow on hover for "raised" effect */
+    transform: translateY(-2px); /* Slight "lift" effect */
+  }
+  
+  /* Navbar Active Link Styling */
+  .navbar-link.active {
+    background-color: #1E40AF; /* Darker blue for active link */
+    color: #F0F9FF; /* Light blue text */
+    font-weight: bold; /* Make the active link bold */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .navbar-links {
+      flex-direction: column; /* Stack the links vertically */
+      gap: 1rem; /* Vertical gap between links */
+      margin-top: 1rem; /* Add some spacing on top */
+    }
+  }
+  

@@ -1,0 +1,180 @@
+/* RoomForm.css */
+.room-form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.room-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.room-form-group {
+  margin-bottom: 15px;
+}
+
+.room-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.room-form-group input,
+.room-form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.room-form-group input:focus,
+.room-form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.room-toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.room-toggle-switch label {
+  font-weight: normal;
+  color: #666;
+}
+
+.room-toggle-switch input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.room-toggle-switch input[type="checkbox"]:checked {
+  background-color: #007bff;
+}
+
+.room-toggle-switch input[type="checkbox"]::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+.room-toggle-switch input[type="checkbox"]:checked::after {
+  left: 23px;
+}
+
+.room-form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.room-form-button:hover {
+  background-color: #0056b3;
+}
+
+.room-error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Room list styling */
+.room-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.room-search-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.room-search-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.add-room-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.add-room-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.add-room-btn:hover {
+  background-color: #45a049;
+}
+
+.room-table-container {
+  margin-top: 40px; /* Adds space for proper alignment */
+}
+
+.room-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.room-table th,
+.room-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.room-table th {
+  background-color: #f4f4f4;
+}
+
+.room-pagination button {
+  margin: 5px;
+  padding: 10px;
+}

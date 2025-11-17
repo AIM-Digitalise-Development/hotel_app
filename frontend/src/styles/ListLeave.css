@@ -1,0 +1,175 @@
+/* General Styles */
+.container {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: 700; /* Bold */
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.p-6 {
+  padding: 1.5rem; /* Equivalent to Tailwind's p-6 */
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.bg-teal-600 {
+  background-color: #059669; /* Teal shade from Tailwind */
+}
+
+.bg-teal-600:hover {
+  background-color: #047857; /* Darker teal for hover */
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.border {
+  border: 1px solid #d1d5db; /* Gray border */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures table cells align properly */
+}
+
+.table thead {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  background-color: #f9fafb; /* Light gray */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9fafb; /* Alternating row color */
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.text-gray-700 {
+  color: #374151; /* Tailwind gray */
+}
+
+.text-gray-500 {
+  color: #6b7280; /* Lighter gray */
+}
+
+.input {
+  border: 1px solid #d1d5db; /* Light gray */
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  width: 100%; /* Ensures input spans the container */
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.loading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem;
+}
+.link-button {
+  text-decoration: none; /* Removes underline */
+  color: white; /* Ensures text color is white */
+  background-color: #059669; /* Teal background */
+  padding: 0.25rem 1rem; /* Adjust padding for better spacing */
+  border-radius: 0.375rem; /* Rounded corners */
+  display: inline-block; /* Ensures proper box behavior */
+}
+
+.link-button:hover {
+  background-color: #047857; /* Darker teal on hover */
+}
+
+/* Status Buttons (Pending, Approved, Rejected) */
+.status-btn {
+  padding: 0.25rem 1rem;
+  background-color: #059669; /* Teal background */
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 0.75rem; /* Spacing between buttons */
+}
+
+.status-btn:hover {
+  background-color: #047857; /* Darker teal on hover */
+}
+
+.status-btn:focus {
+  outline: none;
+}
+
+/* Pending Button */
+.status-btn.pending {
+  background-color: #ffb703; /* Yellow for Pending */
+}
+
+.status-btn.pending:hover {
+  background-color: #e09e00; /* Darker yellow for hover */
+}
+
+/* Approved Button */
+.status-btn.approved {
+  background-color: #4caf50; /* Green for Approved */
+}
+
+.status-btn.approved:hover {
+  background-color: #388e3c; /* Darker green for hover */
+}
+
+/* Rejected Button */
+.status-btn.rejected {
+  background-color: #f44336; /* Red for Rejected */
+}
+
+.status-btn.rejected:hover {
+  background-color: #d32f2f; /* Darker red for hover */
+}
