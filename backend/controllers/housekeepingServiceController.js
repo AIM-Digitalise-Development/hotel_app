@@ -1,5 +1,5 @@
 // controllers/housekeepingServiceController.js
-import HousekeepingService from "../models/houseKeepingServiceModel.js";
+import HousekeepingService from "../models/housekeepingServiceModel.js";
 
 // Create a new housekeeping service
 export const createHousekeepingService = async (req, res) => {
