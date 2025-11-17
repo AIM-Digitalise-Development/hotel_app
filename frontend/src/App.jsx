@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
-import EmployeeDashboard from './pages/employeeDashboard';
+import EmployeeDashboard from './pages/EmployeeDashboard';
 import PrivateRoutes from './utils/PrivateRoutes';
 import RoleBaseRoutes from './utils/RoleBaseRoutes';
 import DepartmentList from './components/department/DepartmentList';
